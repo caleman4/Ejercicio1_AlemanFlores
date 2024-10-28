@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DestinoActivity"
+    android:background="@color/blue_logo2"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/faster_one"
+        android:text="@string/name"
+        android:textColor="@color/blue_logo3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bricolage_grotesque_bold"
+
+        android:text="@string/boletos"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="114dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnReservar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_logo3"
+        android:fontFamily="@font/bricolage_grotesque_medium"
+        android:text="@string/nuevoBoleto"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.87" />
+
+
+    <ImageView
+        android:id="@+id/imBoletoIda"
+        android:layout_width="391dp"
+        android:layout_height="147dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/boletoplantilla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <ImageView
+        android:id="@+id/logoBoletoIda"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo2"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <TextView
+        android:id="@+id/tvNA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/faster_one"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/tvNombre1"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.395"
+        tools:text="Carlos Aleman" />
+
+    <TextView
+        android:id="@+id/tvAsientoIda1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.16000003"
+        tools:text="12A" />
+
+    <TextView
+        android:id="@+id/tvAsientoIda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.9"
+        tools:text="12A" />
+
+    <TextView
+        android:id="@+id/tvOrigenIda1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.61"
+        tools:text="MEX" />
+
+    <TextView
+        android:id="@+id/tvDestinoIda1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.61"
+        tools:text="CUN" />
+
+    <TextView
+        android:id="@+id/tvOrigenIda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.92"
+        tools:text="MEX" />
+
+    <TextView
+        android:id="@+id/tvDestinoIda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.92"
+        tools:text="CUN" />
+
+    <TextView
+        android:id="@+id/tvFechaIda1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.55"
+        tools:text="25/10/2024" />
+
+    <TextView
+        android:id="@+id/tvHoraIda1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.65"
+        tools:text="7:00 a.m." />
+
+    <TextView
+        android:id="@+id/tvFechaIda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.72"
+        tools:text="25/10/2024" />
+
+    <TextView
+        android:id="@+id/tvHoraIda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoIda"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoIda"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.72"
+        tools:text="7:00 a.m." />
+
+
+
+    <ImageView
+        android:id="@+id/imBoletoVuelta"
+        android:layout_width="391dp"
+        android:layout_height="147dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/boletoplantilla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imBoletoIda"
+        app:layout_constraintVertical_bias="0.07999998" />
+    <ImageView
+        android:id="@+id/logoBoletoVuelta"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo2"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <TextView
+        android:id="@+id/tvNA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/faster_one"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/tvNombre2"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.395"
+        tools:text="Carlos Aleman" />
+
+    <TextView
+        android:id="@+id/tvAsientoVuelta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.16000003"
+        tools:text="12A" />
+
+    <TextView
+        android:id="@+id/tvAsientoVuelta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.9"
+        tools:text="12A" />
+
+    <TextView
+        android:id="@+id/tvOrigenVuelta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.61"
+        tools:text="CUN" />
+
+    <TextView
+        android:id="@+id/tvDestinoVuelta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.61"
+        tools:text="MEX" />
+
+    <TextView
+        android:id="@+id/tvOrigenVuelta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.92"
+        tools:text="CUN" />
+
+    <TextView
+        android:id="@+id/tvDestinoVuelta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.92"
+        tools:text="MEX" />
+
+    <TextView
+        android:id="@+id/tvFechaVuelta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.55"
+        tools:text="27/10/2024" />
+
+    <TextView
+        android:id="@+id/tvHoraVuelta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.65"
+        tools:text="7:00 a.m." />
+
+    <TextView
+        android:id="@+id/tvFechaVuelta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.72"
+        tools:text="27/10/2024" />
+
+    <TextView
+        android:id="@+id/tvHoraVuelta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/martian_mono_bold"
+        android:textColor="@color/blue_boleto"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBoletoVuelta"
+        app:layout_constraintEnd_toEndOf="@+id/imBoletoVuelta"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/imBoletoVuelta"
+        app:layout_constraintTop_toTopOf="@+id/imBoletoVuelta"
+        app:layout_constraintVertical_bias="0.72"
+        tools:text="7:00 a.m." />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

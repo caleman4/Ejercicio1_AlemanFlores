@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reserva">Book now!</string>
+    <string name="origen">Where are you traveling from?</string>
+    <string name="destino">Where do you want to go?</string>
+    <string name="ida">When do you want to travel?</string>
+    <string name="vuelta">When do you want to return?</string>
+    <string name="seleccionar_fecha">" Select a date"</string>
+    <string name="continuar">" Continue"</string>
+    <string name="nombre">" Enter your name"</string>
+    <string name="apellido">" Enter your last name"</string>
+    <string name="correo">" Enter your email"</string>
+    <string name="viajero">" Enter your frequent flyer number (Optional)"</string>
+    <string name="confirma">" Confirm your details!"</string>
+    <string name="vNombre">Name</string>
+    <string name="vVueloIda">Departure flight information</string>
+    <string name="vVueloVuelta">Return flight information</string>
+    <string name="vCostos">" Cost information"</string>
+    <string name="confirmar">Confirm reservation!</string>
+    <string name="boletos">You now have your tickets!</string>
+    <string name="nuevoBoleto">Buy another ticket</string>
+    <string name="mismo_lugar">" The destination cannot be the same as the origin."</string>
+    <string name="falta_fecha">Please add round trip dates.</string>
+    <string name="ingresa_nombre">" Please enter your name."</string>
+    <string name="nombre_requerido">" A name is required."</string>
+    <string name="ingresa_apellido">" Please enter your last name."</string>
+    <string name="apellido_requerido">A last name is required.</string>
+    <string name="ingresa_email">" Please enter your email."</string>
+    <string name="email_requerido">"An email is required. "</string>
+    <string name="dateTimeIda">" %s at %s"</string>
+    <string name="asientoIda">" Seat %s"</string>
+    <string name="montoInicial">Ticket cost: %s</string>
+    <string name="descuento">Frequent flyer discount: %s</string>
+    <string name="montoFinal">Final cost: %s</string>
+</resources>

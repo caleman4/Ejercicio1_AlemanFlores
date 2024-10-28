@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name" translatable="false">UNAM Airlines</string>
+    <string name="name" translatable="false">UNAM Airlines</string>
+    <string name="reserva">¡Reserva ya!</string>
+    <string name="origen">¿Desde dónde viajas?</string>
+    <string name="destino">¿A dónde quieres ir?</string>
+    <string name="ida">¿Cuándo quieres viajar?</string>
+    <string name="vuelta">¿Cuándo quieres regresar?</string>
+    <string name="seleccionar_fecha">Selecciona una fecha</string>
+    <string name="continuar">Continuar</string>
+    <string name="nombre">Ingresa tu nombre</string>
+    <string name="apellido">Ingresa tu apellido</string>
+    <string name="correo">Ingresa tu correo electrónico</string>
+    <string name="viajero">Ingresa tu número de viajero frecuente (Opcional)</string>
+    <string name="confirma">¡Confirma tus datos!</string>
+    <string name="vNombre">"Nombre"</string>
+    <string name="vVueloIda">Información del vuelo de ida</string>
+    <string name="vVueloVuelta">Información del vuelo de vuelta</string>
+    <string name="vCostos">Información de los costos</string>
+    <string name="confirmar">¡Confirmar reservación!</string>
+    <string name="boletos">¡Ya tienes tus boletos!</string>
+    <string name="nuevoBoleto">Comprar otro boleto</string>
+    <string name="mismo_lugar">El destino no puede ser el mismo que el origen.</string>
+    <string name="falta_fecha">Por favor, agrega las fechas de ida y vuelta.</string>
+    <string name="ingresa_nombre">Por favor, ingresa tu nombre.</string>
+    <string name="nombre_requerido">Se requiere un nombre.</string>
+    <string name="ingresa_apellido">Por favor, ingresa tu apellido.</string>
+    <string name="apellido_requerido">Se requiere un apellido.</string>
+    <string name="ingresa_email">Por favor, ingresa tu correo electrónico.</string>
+    <string name="email_requerido">Se requiere un correo electrónico.</string>
+    <string name="nombre_compleeto" translatable="false">%s %s</string>
+    <string name="nombre_completo" translatable="false">%s %s</string>
+    <string name="vuelo_ciudades" translatable="false">%s ➔ %s</string>
+    <string name="dateTimeIda">%s a las %s</string>
+    <string name="asientoIda">Asiento %s</string>
+    <string name="montoInicial">Monto de los boletos: %s</string>
+    <string name="descuento">Descuento de viajero frecuente: %s</string>
+    <string name="montoFinal">Monto final: %s</string>
+    <string name="cadena_simple" translatable="false">%s</string>
+    <string-array name="places">
+        <item>Cancún</item>
+        <item>Ciudad de México</item>
+        <item>Guadalajara</item>
+        <item>Monterrey</item>
+        <item>Los Cabos</item>
+        <item>Tijuana</item>
+    </string-array>
+    <string-array name="horas">
+        <item>7:00 a.m.</item>
+        <item>10:00 a.m.</item>
+        <item>2:00 p.m.</item>
+        <item>6:00 p.m.</item>
+    </string-array>
+</resources>
